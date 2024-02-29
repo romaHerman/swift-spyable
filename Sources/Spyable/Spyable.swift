@@ -52,6 +52,7 @@
 ///
 /// - NOTE: The `@Spyable` macro should only be applied to protocols. Applying it to other
 ///         declarations will result in an error.
+@_exported import XCTest
 @attached(peer, names: suffixed(Spy))
 public macro Spyable(behindPreprocessorFlag: String? = nil) =
   #externalMacro(
